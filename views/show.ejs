@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<article class="post-full">
+  <h1><%= post.title %></h1>
+  <p class="meta">
+    By <%= post.author %> &middot;
+    <%= new Date(post.createdAt).toLocaleString() %>
+  </p>
+  <div class="content"><%= post.content %></div>
+
+  <div class="actions">
+    <a href="/posts/<%= post.id %>/edit" class="btn">Edit</a>
+    <form action="/posts/<%= post.id %>?_method=DELETE" method="POST" onsubmit="return confirm('Delete this post?');">
+      <button type="submit" class="btn danger">Delete</button>
+    </form>
+    <a href="/posts" class="back-link">&larr; Back to all posts</a>
+  </div>
+</article>
+
+<%- include('partials/footer') %>

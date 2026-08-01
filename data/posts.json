@@ -1,0 +1,9 @@
+[
+  {
+    "id": "54a352f3-2060-4cc5-a5c2-5bd7d027fac3",
+    "title": "Welcome to My Blog",
+    "author": "Sonu",
+    "content": "This is the first post on this simple blog built with Express, REST routes, and EJS templates. Feel free to edit or delete it, or add your own posts!",
+    "createdAt": "2026-07-23T22:03:35.632Z"
+  }
+]
