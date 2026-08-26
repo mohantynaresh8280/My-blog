@@ -1,3 +1,1 @@
 # Simple Blog (REST + EJS)
-
-
